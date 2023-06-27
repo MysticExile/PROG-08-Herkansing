@@ -8,7 +8,7 @@ const bmiInput = document.getElementById("bmi");
 const childrenInput = document.getElementById("children");
 const smokerInput = document.getElementById("smoker");
 const regionInput = document.getElementById("region");
-const errorField = document.getElementById('errorField');
+const errorField  = document.getElementById('error');
 
 const nn = ml5.neuralNetwork({task: 'regression', debug: true})
 nn.load('./model/model.json', modelLoaded)
@@ -34,7 +34,7 @@ async function makePrediction() {
     if (isNaN(results[0].charges)) {
         errorField.innerHTML = "Something went wrong. Please try again!"
     } else {
-        console.log(`Predicted Price based on input: ${results[0].charges}`)
+        console.log(`Predicted price: ${results[0].charges}`)
         currencyTransformer(results[0].charges);
     }
 
