@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script defer src="predict.js" type="module"></script>
+    <title>Ethan's Insurance</title>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="./images/slay.jpg">
+        <h1>Ethan's Insurance</h1>
+    </div>
+</header>
+
+<div class="container">
+    <h2>Calculate the price of your insurance here!</h2>
+    <label for="age">How old are you</label>
+    <input type="number" id="age" placeholder="For example: 20"/>
+
+    <label for="sex">What is your sex?</label>
+    <select id="sex">
+        <option value="female">female</option>
+        <option value="male">male</option>
+    </select>
+
+    <label for="bmi">What is your current BMI?</label>
+    <input type="number" id="bmi" placeholder="For example: 25"/>
+
+    <label for="children">Do you have children?</label>
+    <input type="number" id="children" placeholder="For example: 3"/>
+
+    <label for="smoker">Are you a smoker?</label>
+    <select id="smoker">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+    </select>
+
+    <label for="region">What region are you located in?</label>
+    <select id="region">
+        <option value="southwest">South-West</option>
+        <option value="southeast">South-East</option>
+        <option value="northeast">North-East</option>
+        <option value="northwest">North-West</option>
+    </select>
+    <br>
+    <button id="predictBtn">Predict price</button>
+</div>
+<div class="container" id="result">
+    <span id="error"></span>
+</div>
+</body>
+
+</html>

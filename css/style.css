@@ -1,0 +1,78 @@
+body {
+    background-color: pink;
+    font-family: Centaur;
+}
+
+header {
+    background-color: white;
+    border-radius: 12px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+img {
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 41vw;
+    max-width: 10%;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.container {
+    align-content: center;
+    text-align: center;
+    padding-left: 600px;
+    padding-right: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    background-color: pink;
+}
+
+input[type="number"] {
+    padding: 6px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px;
+    width: 50%;
+    background-color: white;
+    color: pink;
+}
+
+select {
+    padding: 6px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid;
+    width: 50%;
+    background-color: white;
+    color: pink;
+}
+
+button {
+    padding: 10px;
+    background-color: white;
+    color: pink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: magenta;
+}
+
+#error {
+    color: red;
+}
+
+#result {
+    margin-top: 20px;
+}
